@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #fcfcfc;
+    color: #1c91cf;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header, footer {
+    background-color: #02a6ff;
+    color: #FFFFFF;
+  }
+  
+  header h1, footer nav a {
+    color: #FFFFFF;
+  }
+  
+  header nav a:hover, footer nav a:hover {
+    color: #7e3e3e;
+  }
+  
+  /* Navigation Links */
+  nav a {
+    color: #FFFFFF;
+  }
+  
+  /* Buttons */
+  .slider-btn {
+    background-color: #3E7D7E;
+    color: #FFFFFF;
+  }
+  
+  .slider-btn:hover {
+    background-color: #FF6F61;
+  }
+  
+  /* Accent Colors */
+  .hero-container-slider img {
+    border: 3px solid #1B3A4B; /* Border around images */
+  }
+  
+  .columns div {
+    background-color: #FFFFFF;
+    border: 1px solid #1B3A4B;
+  }
+  
+  .columns div p {
+    color: #1B3A4B;
+  }
+  
+
+  /* Header styles */
+  header {
+    background: #297a8f;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav a {
+    margin-left: 1rem;
+    color: #fff;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Image slider styles */
+  .hero-container-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .hero-container-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: none;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .hero-container-slider img:first-child {
+    display: block;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Column layout */
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .columns div {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .clients-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .clients-section h2 {
+    color: #1B3A4B;
+    margin-bottom: 1.5rem;
+  }
+
+  .clients-section img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  .clients-columns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .client {
+    background-color: #FFFFFF;
+    border: 1px solid #1B3A4B;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client h3 {
+    color: #3E7D7E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .client p {
+    color: #1B3A4B;
+  }
+  
+  /* Footer styles */
+  footer {
+    width: 100%;
+    background-color: #1B3A4B;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer nav a {
+    color: #FFFFFF;
+    margin: 0 1rem;
+  }
+  
+  footer nav a:hover {
+    color: #3E7D7E;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column;
+    }
+  
+    .columns div {
+      margin-bottom: 1rem;
+    }
+  }
+
+@media (max-width: 768px) {
+    .clients-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .client {
+     max-width: 90%;
+    margin-bottom: 1rem;
+    }
+}
+
+/*///////////////////About Page Styles/////////////////////*/
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure consistent box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Main Content Layout */
+.main-content-about {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Content Layout - Align Image and Text Side by Side */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Image Section */
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text Content Section */
+.text-container {
+  flex: 2;
+  text-align: left;
+}
+
+.text-container h2 {
+  margin-top: 0;
+}
+
+.text-container p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Gallery Section - Aligning the Images in a Row */
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller devices (screens <= 1024px) */
+@media (max-width: 1024px) {
+  /* Align header content centrally */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container nav a {
+    margin: 10px 0;
+  }
+
+  /* Stack the image and text vertically */
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Adjust gallery layout for smaller screens */
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-container img {
+    width: 100%; /* Images take full width */
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+}
+
+/* For small mobile devices (screens <= 768px) */
+@media (max-width: 768px) {
+  /* Adjust padding for a better fit */
+  .container {
+    padding: 10px;
+  }
+
+  .header-container {
+    padding: 10px;
+  }
+
+  /* Stack the image and text vertically */
+  .content-container {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    max-width: 100%; /* Images take full width on smaller screens */
+  }
+
+  /* Adjust gallery layout for small mobile screens */
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* For very small mobile devices (screens <= 480px) */
+@media (max-width: 480px) {
+  /* Make sure everything is stacked and centered */
+  .header-container {
+    flex-direction: column;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  /* Text content full-width and centered */
+  .text-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Make images responsive */
+  .image-container img {
+    width: 100%;
+  }
+
+  /* Adjust gallery images for small screens */
+  .gallery-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/*///////////////////Contact Page Styles/////////////////////*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Yacht Inquiry Form Styles */
+.yacht-inquiry-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.yacht-inquiry-form h3 {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.yacht-inquiry-form label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.yacht-inquiry-form input, 
+.yacht-inquiry-form select, 
+.yacht-inquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.yacht-inquiry-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.yacht-inquiry-form button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container nav a {
+    margin: 10px 0;
+  }
+
+  .yacht-inquiry-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
