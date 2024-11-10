@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+     <!--Header container, universal for all pages-->
+    <header>
+      <div class="header-container">
+        <h1>Dave's Yachts</h1>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="About.html">About</a>
+        </nav>
+      </div>
+    </header>
+    <div class="main-content">
+      <h2>Contact Us!!!</h2>
+      <p>Fill out the form below to inquire about our yachts. We’re here to help you find the perfect vessel for your needs!</p>
+      <!-- Contact form-->
+      <form id="yachtInquiryForm" class="yacht-inquiry-form" action="/submit-inquiry" method="POST" >
+          <!-- Contact Information -->
+          <h3>Personal Information</h3>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="phone">Your Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          <!-- General Info section-->
+          <h3>Yacht Inquiry</h3>
+          <label for="yacht-type">Preferred Yacht Type:</label>
+          <select id="yacht-type" name="yacht-type" required>
+              <option value="">Select Yacht Type</option>
+              <option value="motor">Motor Yacht</option>
+              <option value="sail">Sailing Yacht</option>
+              <option value="catamaran">Catamaran</option>
+          </select>
+          <label for="budget">Your Budget (USD):</label>
+          <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+          <label for="inquiry-type">Inquiry Type:</label>
+          <select id="inquiry-type" name="inquiry-type" required>
+              <option value="">Select Inquiry Type</option>
+              <option value="purchase">Purchase Inquiry</option>
+              <option value="rental">Rental Inquiry</option>
+              <option value="maintenance">Maintenance Inquiry</option>
+          </select>
+          <!-- Comment section-->
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us more about your needs..." required></textarea>
+          <!-- Submit Button -->
+          <button type="submit">Submit Inquiry</button>
+      </form>
+  </div>
+</div>
+ <!--Footer container, universal for all pages-->
+    <footer>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="About.html">About</a>
+      </nav>
+  </footer>
+    <script src="app.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
